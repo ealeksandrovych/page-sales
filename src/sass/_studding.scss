@@ -1,11 +1,20 @@
 .studding-wrapper {
     padding: 52px 0;
-    position: relative;
+    // background-image: url(../images/studding-decor-mob.svg);
+    // background-position: top -10px center;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+
+    // position: relative;
+    // z-index: 1;
   }
   .studding-process {
-    padding-bottom: 60px;
+    position: relative;
+    padding-bottom: 60px ;
   }
   .studding-process_description {
+    position: relative;
+    z-index: 3;
     margin-bottom: 32px;
     padding: 20px;
     border-radius: 12px;
@@ -60,33 +69,30 @@
     }
   }
   }
-  .studding-wrapper::after{
-    content: '';
-    display: block;
-    z-index: 3;
-    position: absolute;
-    // background-image: url(../images/decor-study-mob-top.svg), url(../images/decor-study-mob-bottom.svg);
-    background-repeat: no-repeat;
-    background-position: top 0 left 0, bottom 50% right -50px;
-    background-size: 221px, 245px;
+  // .studding-process_description::after{
+  //   content: '';
+  //   display: block;
+  //   z-index: 2;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   background-image: url(../images/top-triangle.svg);
+  //   background-repeat: no-repeat;
+  //   background-position: top -100px left -50px;
+  //   background-size: 221px;
 
+  //   @media screen and (min-width: 768px) {
+     
+  //   }
+  //     @media screen and (min-width: 1200px) {
+  //   background-repeat: no-repeat;
+  //   background-position: top 0 left 0, bottom 50% right -50px;
+  //   background-size: 221px, 245px;
 
-    @media screen and (min-width: 768px) {
-      // background-image:();
-      width: 90%;
-      height: 90%;
-      top:-30px;
-      left:-30px;
-    }
-    @media screen and (min-width: 1200px) {
-      // background-image:();
-      width: 440px;
-      height: 413px;
-      top:-30px;
-      left:-30px;
-    }
-  }
+  //     }
+  // }
   .studding-process_timeline {
+    position: relative;
       box-shadow: 0px 1px 2px rgba(92, 46, 145, 0.08), 10px 10px 40px rgba(92, 46, 145, 0.24);
       padding: 20px;
       border-radius: 12px;
@@ -99,6 +105,28 @@
         height:auto;
       }
   }
+  // .studding-process_timeline::after{
+  //   content: '';
+  //   display: block;
+  //   z-index: 2;
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   background-image:  url(../images/bottom-triangle.svg);
+  //   background-repeat: no-repeat;
+  //   background-position:  bottom 75% right -80% ;
+  //   background-size: 245px;
+
+  //   @media screen and (min-width: 768px) {
+     
+  //   }
+  //     @media screen and (min-width: 1200px) {
+  //   background-repeat: no-repeat;
+  //   background-position: top 0 left 0, bottom 50% right -50px;
+  //   background-size: 221px, 245px;
+
+  //     }
+  // }
   .studding-process_list-timeline{
     border-left: 4px solid $color-sale-yellow;
     padding-left: 20px;
@@ -164,63 +192,7 @@
   
   }
     }
-  //   .studding-process_item-timeline:not(:last-child){
-  //     margin-bottom: 32px;
-  //     @media screen and (min-width: 768px) and (max-width: 1199px){
-  //       margin-bottom: 0;
-  //   }
-  // }
-//   .studding-process_item-timeline:last-child{
-//     @media screen and (min-width: 768px) and (max-width: 1199px){
-//       left:-60px;
-//   }
-//   &:before{
-//     @media screen and (min-width: 768px) and (max-width: 1199px){
-//       left:60px;
-//   }
-//   }
-// }
-// .studding-process_item-timeline:last-child:before{
-//   @media screen and (min-width: 768px) and (max-width: 1199px){
-//     left:60px;
-// }
-// }
-    // .studding-process_item-timeline::before{
-    //   position:absolute;
-    //   content: "";
-    //   width: 12px;
-    //   height: 12px;
-    //   border-radius: 50%;
-    //   left:-28px;
-    //   top:14px;
-    //   background-color: $color-sale-purple;
-    //   @media screen and (min-width: 768px) and (max-width: 1199px){
-    //     // top:-24px;
-    //     left:0;
-    //    }
-    
-    // }
-    // .studding-process_item-timeline:nth-child(odd){
-    //   @media screen and (min-width: 768px) and (max-width: 1199px){
-    //    height: 40px;
-    //    bottom: -95px;
-    //   }
-    //   &:before{
-    //     @media screen and (min-width: 768px) and (max-width: 1199px){
-    //      top: -36px;
-    //     }
-    //   }
-    // }
-    // .studding-process_item-timeline:nth-child(even):before{
-    //   @media screen and (min-width: 768px) and (max-width: 1199px){
-    //     top: 60px;
-    //   }
-    // }
-    // .studding-process_item-timeline:nth-child(odd):before{
-    //   @media screen and (min-width: 768px) and (max-width: 1199px){
-    //    top: -36px;
-    //   }
-    // }
+  
     .rating {
       display: flex;
       align-items: flex-end;
@@ -299,6 +271,7 @@
   }
   .studding-payments_currency-tabs-btn{
     border: 1px solid $color-sale-purple;
+    background-color: transparent;
     border-radius: 8px;
       width: 100%;
       height: 100%;
@@ -451,4 +424,23 @@
     min-width: 194px;
   }
 
+}
+.studding-payments_tabs-list{
+display: flex;
+justify-content: center;
+gap:28px;
+}
+.studding-payments_tab-pay{
+  width: 100%;
+  height: 100%;
+}
+.studding-payments_tabs-item{
+  width: 48px;
+  height: 48px;
+  &:first-child>.studding-payments_tab-pay{
+    background-image: url(../images/apple-pay.png);
+  }
+  &:last-child>.studding-payments_tab-pay{
+    background-image: url(../images/google-pay.png);
+  }
 }

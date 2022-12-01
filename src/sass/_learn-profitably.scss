@@ -1,9 +1,34 @@
 .learn-profitably {
     background-color: $color-sale-yellow;
-    padding: 52px 0;
+    padding-bottom: 52px ;
+    position: relative;
+    z-index: 1;
     @media screen and (min-width: 768px) {
-        padding: 88px 0;
+        padding-bottom: 88px;
     }
+    &::before{
+          content: '';
+          display: block;
+          z-index: 1;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background-image: url(../images/learn-mob.svg);
+          background-repeat: no-repeat;
+          background-position: top 70px center;
+          background-size: 246px auto contain;
+      
+          @media screen and (min-width: 768px) {
+            background-image: url(../images/learn-tab.svg);
+            background-position: top -20px right -10px;
+          background-size: 946px auto contain;
+          }
+            @media screen and (min-width: 1200px) {
+                background-image: url(../images/learn-desk.svg);
+                background-position: top -20px center;
+                background-size: 100% auto contain;
+            }
+        }
 }
 .learn-profitably_img {
     display: block;
@@ -129,70 +154,6 @@ margin-bottom: 94px;
     
     }
 }
-// .learn-profitably_item:nth-child(1){
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-//         grid-column: 2 / 3;
-//         grid-row: 1 / 2;
-        
-//     }
-//     @media screen and (min-width: 1200px){
-//         grid-column: 1 / 2;
-//         grid-row: 1 / 3;
-      
-//     }
-// }
-// .learn-profitably_item:nth-child(2){
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-//         grid-column: 2 / 3;
-//         grid-row: 2 / 3;
-        
-//     }
-//     @media screen and (min-width: 1200px){
-//         grid-column: 2 / 3;
-//         grid-row: 1 / 3;
-//         margin-top: 80px;
-//     }
-// }
-// .learn-profitably_item:nth-child(3){
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-//         grid-column: 1 / 2;
-//         grid-row: 3 / 4;
-        
-//     }
-//     @media screen and (min-width: 1200px){
-//         grid-column: 1 / 2;
-//         grid-row: 3 / 5;
-//     }
-// }
-// .learn-profitably_item:nth-child(4){
-//     @media screen and (min-width: 768px) and (max-width: 1199px) {
-//         grid-column: 2 / 3;
-//         grid-row: 3 / 4;
-        
-//     }
-//     @media screen and (min-width: 1200px){
-//  grid-column: 2 / 3;
-//         grid-row: 3 / 5;
-//         margin-top: 80px;
-//     }
-// }
 
 
-// .learn-profitably_item > svg {
-//     position: absolute;
-//     top:-15%;
-//     left:20px;
-// }
-// .learn-profitably_item > h3{
-//     font-size: 20px;
-//     line-height: 1.3;
-//     margin-bottom: 16px;
-//     font-weight: 700;
-//     color: $color-black;
-// }
-// .learn-profitably_item > p{
-//     color:$color-black;
-//     font-size: 18px;
-//     line-height: 1.45;
 
-// }

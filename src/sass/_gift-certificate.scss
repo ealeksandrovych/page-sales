@@ -34,13 +34,6 @@ background-color:transparent
 
 }
 
-// .gift-certificate_order-link:hover,
-// .gift-certificate_order-link:focus{
-//     color: $color-black;
-// border-color: $color-sale-purple;
-// background-color:transparent
-
-// }
 .gift-certificate_img{
     display: block;
     
@@ -81,6 +74,26 @@ background-color:transparent
             margin-bottom: 0;
         }
     }
+
+    &:nth-child(1){
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/line-catd-1.svg);
+            background-position: bottom 0 right 0;
+            background-repeat: no-repeat;
+        }
+    } 
+    
+    &:nth-child(4){
+        @media screen and (min-width: 768px) {
+            background-image: url(../images/line-card-2.svg);
+            background-position: bottom 0 right 0;
+            background-repeat: no-repeat;
+        }
+        @media screen and (min-width: 1200px) {
+            background-position: bottom 0 right -10%;
+        }
+    } 
+    
     & > svg {
         position: absolute;
         top:20px;
@@ -121,54 +134,7 @@ background-color:transparent
         }
     }
 }
-// .unique-opportunity_item:not(:last-child) {
-//     margin-bottom: 24px;
-//     @media screen and (min-width: 768px) {
-//         margin-bottom: 32px;
-//     }
-//     @media screen and (min-width: 1200px) {
-//         margin-bottom: 0;
-//     }
-// }
-// .unique-opportunity_item > svg {
-//     position: absolute;
-//     top:20px;
-//     right: 20px;
-//     width: 40px;
-//     height: 40px;
-//     @media screen and (min-width: 768px) {
-//         width: 60px;
-//         height: 60px;
-//         top:32px;
-//         right: 32px;
-//     }
-//     @media screen and (min-width: 1200px) {
-//         width: 60px;
-//         height: 60px;
-//         right: 20px;
-//     }
-    
-// }
-// .unique-opportunity_item > h3 {
-//     line-height: 1.4;
-//     max-width: 184px;
-//     font-size: 20px;
-//     color: $color-black;
-//     margin-bottom: 20px;
-//     font-weight: 700;
-//     @media screen and (min-width: 768px) {
-//         margin-bottom: 24px;
-//         max-width: 335px;
-//     }
-// }
-// .unique-opportunity_item > p {
-//     line-height: 1.4;
-//     font-size: 16px;
-//     color: $color-black;
-//     @media screen and (min-width: 768px) {
-//         font-size: 17px;
-//     }
-// }
+
 .gift-certificate__box{
     margin-bottom: 52px;
     @media screen and (min-width: 1200px) {
@@ -204,22 +170,3 @@ background-color:transparent
 }
 
 }
-// .gift-certificate__info > b{
-//     display: block;
-//     font-size: 18px;
-//     font-weight: 700;
-//     line-height: 1.4;
-//     color: $color-black;
-//     margin-bottom: 32px;
-//     @media screen and (min-width: 768px) {
-//      font-size: 28px;
-//      margin-bottom: 40px;
-//     }
-// }
-// .gift-certificate__info > p{
-//     font-size: 16px;
-//     font-weight: 1.4;
-// }
-// .gift-certificate__info > p:not(:last-child){
-//     margin-bottom: 30px;
-// }
